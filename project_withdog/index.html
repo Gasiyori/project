@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+    <title>index</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'NanumSquare'
+    }
+    div.main {
+      width: 1024px;
+    }
+    div.top {
+      display: flex;
+      background: #74a60a;
+    }
+    div.title {
+      margin: 1.5rem auto;
+      height: 150px;
+    }
+    div.title > h1 {
+      display: inline-block;
+      font-size: 2.5em;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .divider-custom {
+      margin: 1.25rem 0 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .divider-custom .divider-custom-line {
+      width: 100%;
+      max-width: 7rem;
+      height: 0.25rem;
+      background-color: #2c3e50;
+      border-radius: 1rem;
+      border-color: #2c3e50 !important;
+    }
+    .divider-custom .divider-custom-line:first-child {
+      margin-right: 1rem;
+    }
+    .divider-custom .divider-custom-line:last-child {
+      margin-left: 1rem;
+    }
+    .divider-custom .divider-custom-icon {
+      font-size: 2rem;
+    }
+  
+    div.title > h2{
+      display: inline-block;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    div.titles{
+      margin: 0 auto;
+      display:table;
+      padding: 30px;
+      height: 10px;
+    }
+    div.cont{
+      margin: 0 auto;
+      padding: 10px;
+      display: table;
+      width: 250px;
+      height: 200px;
+    }
+    div.state{
+      display: block;
+      min-height: 1px;
+      margin: 0 auto;
+
+    }
+    div.state > h3{
+      text-align : center;
+      font-weight: 500;
+      line-height: 1.5;
+      background: #467302;
+      color: white;
+    }
+    div.state > p{
+      padding: 15px 10px 10px 10px;
+      background: #F2F2F2;
+      height: 100px;
+    }
+    br{
+      line-height: 5;
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <div class="top">
+        <div class="title">
+          <h1>WITH DOG</h1>
+          <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">🐶</div>
+            <div class="divider-custom-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="titles">
+         <h2>반려견 상태</h2>
+      </div>
+      <div class="cont">
+        <div class="state">
+        <h3>배변 상태</h3>
+        {% if temp > 20 and humi > 30 %}
+        <p> 반려견이 멀미 중 입니다. <br><br>
+            상태를 확인해주세요🤮.
+        </p>
+        {% else %}
+        <p> 반려견의 상태가 좋습니다. <br><br>
+            좋은 하루 되세요😀.
+        </p>
+        {% endif %}
+
+        </div>
+      </div>
+      <div class="cont">
+        <div class="state">
+        <h3>케이지 재실 시간</h3>
+        <p style="height:20px"><b>{{clock}}초</b> 째 재실 중 입니다. 
+        </p>
+        </div>
+      </div>
+    </div>
+    <!-- <h2>현재 온도</h2>
+    {{temp}}
+    <h2>현재 습도</h2>
+    {{humi}} -->
+
+  </body>
+</html>
