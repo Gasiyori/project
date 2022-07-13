@@ -1,0 +1,7 @@
+Firmata을 사용하여 Raspberry Pi 4와 Arduino Uno를 연동
+	- Firmata >> 마이크로컨트롤러(Microcontroller)와 일반 컴퓨터 소프트웨어 사이의 통신을 위한 프로토콜
+
+get_pin('d:13:o') 함수
+d는 핀 타입(Pin Type) : d(digital), a(analog) 사용 가능
+숫자는 핀 번호 : 아두이노 기준의 숫자
+o는 핀 모드 : i(input), o(output), p(pwm), s(servo) 사용 가능
