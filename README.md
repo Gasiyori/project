@@ -20,10 +20,8 @@ oneM2M 표준 기반 오픈소스 IoT 플랫폼을 이용한 **<반려견 훈련
 
 https://www.hackster.io/jindoge/mobius-int-developer-competition-60bb21
 
-![image](https://user-images.githubusercontent.com/75403856/178669486-33e96bf4-67e4-4989-bff9-4ea6c1a04126.png)
-
 ### 3. Jamjam
 
-졸업 작품 / 특허 진행 중
+졸업 작품 / 특허 심사 진행 중
 
 https://github.com/Graduation-Gooooods
